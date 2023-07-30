@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Clima</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imagens/app-de-clima.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <div class="parteSuperior">
+            <h3>Verifique o clima de uma cidade</h3>
+            <form class="form">
+                <input 
+                    type="text" 
+                    placeholder="Digite o nome da cidade"
+                    id="inputCidade"
+                />
+                <button id="buscar">
+                    <i class="uil uil-search"></i>
+                </button>
+            </form>
+        </div>
+        <hr>
+        <div id="dadosClima" class="hide">
+            <h2>
+                <i class="uil uil-location-point"></i>
+                <span id="cidade"></span>
+                <img src="" alt="Bandeira do País" id="pais">
+            </h2>
+            <p id="temperatura">
+                <span></span>&deg;C
+            </p>
+            <div class="descricao">
+                <p id="state"></p>
+                <img src="" alt="Condição temperatura" id="climaIcon">
+            </div>
+            <div id="detalhes">
+                <p id="umidade">
+                    <i class="uil uil-raindrops-alt"></i>
+                    <span></span>
+                </p>
+                <hr>
+                <p id="vento">
+                    <i class="uil uil-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+        <div id="errorMessage" class="hide">
+            <p>ERRO! Não foi possível encontrar a cidade pesquisada</p>
+        </div>
+        <div id="sugestoes">
+            <h1>Sugestões de buscas</h1>
+            <div>
+                <button id="viena">Viena</button>
+                <button id="copenhague">Copenhague</button>
+                <button id="zurique">Zurique</button>
+                <button id="vancouver">Vancouver</button>
+                <button id="genebra">Genebra</button>
+                <button id="frankfurt">Frankfurt</button>
+                <button id="osaka">Osaka</button>
+                <button id="maceio">Santos</button>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <a href="https://www.flaticon.com/br/icones-gratis/aplicativo-de-clima" title="aplicativo de clima ícones">
+        Aplicação Web de clima - ícone do favicon criado por Freepik - Flaticon
+    </a>
+</footer>
+    <script src="js/script.js"></script>
+</html>
