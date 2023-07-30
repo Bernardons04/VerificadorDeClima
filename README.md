@@ -8,13 +8,11 @@ Readme.Github
 
 ### Esse projeto consome duas APIs, uma para entregar os dados a respeito do clima de acordo com a cidade pesquisada, e outra para entregar a bandeira do país da cidade pesquisada.
 
-### 
-
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## 🎯Proposta do projeto
 
-### Com esse Verificador de Clima o usuário conseguirá verificar as informações mais simples e necessárias a respeito do clima
+### Com esse Verificador de Clima o usuário conseguirá verificar as informações mais simples e necessárias a respeito do clima de qualquer cidade do mundo.
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
