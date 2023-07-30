@@ -1,6 +1,6 @@
 Readme.Github
 
-# Verificador de Clima
+# Lista de Tarefas
 
 ## 📱Descrição do projeto
 
@@ -14,9 +14,7 @@ Readme.Github
 
 ## 🎯Proposta do projeto
 
-### Com esse Verificador de Clima o usuário conseguirá 
-
-a Lista de Tarefas o usuário conseguirá se organizar melhor para realizar os afazeres do dia a dia. Podendo Adicionar tarefas, marcar tarefas como concluídas, entre outras funcionalidades que citarei logo abaixo.
+### Com essa Lista de Tarefas o usuário conseguirá se organizar melhor para realizar os afazeres do dia a dia. Podendo Adicionar tarefas, marcar tarefas como concluídas, entre outras funcionalidades que citarei logo abaixo.
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
