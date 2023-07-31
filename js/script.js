@@ -19,23 +19,22 @@ const btnSugestao = document.querySelectorAll("#sugestoes button")
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const cidade = inputCidade.value
-    if (inputCidade.value == "") {
+    if (cidade == "") {
         alert('Digite algo para inserir em sua lista!')       
-    } else if (mostrarDadosClima(cidade)) {
-        
+    } else {
+        mostrarDadosClima(cidade)
     }
     inputCidade.value = "";
 })
 
 const mostrarDadosClima = async city => {
     const dados = await getClimaDados(city) 
-
     validarExistencia(city)
+    
     let flagCountry;
     cidade.innerText = dados.name;
     flagCountry = dados.sys.country;
-    const apiCountryURL = `https://flagsapi.com/${flagCountry}/flat/64.png`;
-    pais.src = apiCountryURL;
+    pais.src = `https://flagsapi.com/${flagCountry}/flat/64.png`;
 
     descricao.innerText = dados.weather[0].description;
     climaIcon.src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`;
@@ -46,10 +45,9 @@ const mostrarDadosClima = async city => {
 }
 
 const getClimaDados = async city => {
-    const apiClimaURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${keyAPI}&lang=pt_br`
-    const apiResposta = await fetch(apiClimaURL)
+    const apiResposta = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${keyAPI}&lang=pt_br`)
     const dados = await apiResposta.json();
-    return dados
+    return dados;
 }
 
 const validarExistencia = async (city) => {
